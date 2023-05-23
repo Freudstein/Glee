@@ -1,0 +1,106 @@
+@use "sass:math";
+
+// Подключение Миксинов
+
+@import "base/mixins";
+
+// Подключаем шрифты тут, не забываем добавить в конец &display=swap
+
+// Или же локальный файл, если подключаем шрифты локально
+
+//@import "base/fonts/fonts";
+
+// Подключение иконочных шрифтов
+
+//@import "base/fonts/icons";
+
+
+// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+$fontFamily: "Open Sans";
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
+$lineHeight: 1;
+$fontWeight: 300;
+
+// Основные цвета
+$mainColor: #AAA; // Цвет шрифта по умолчанию
+
+// НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1300;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина страбатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+
+/*
+Ограничивающий контейнер:
+Стили будут применяться ко всем классам содержащим *__container. Например header__container, main__container и т.д.
+*/
+
+@if ($responsiveType==1) {
+	// Отзывчивая
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: rem($containerWidth);
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			@if ($maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			} @else {
+				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
+				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			}
+		}
+	}
+} @else {
+	// По брейк-поинтам
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: rem($containerWidth);
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+
+//Подключение обнуляющих стилей:
+@import "base/global";
+
+@import "base/common";
+
+
+
