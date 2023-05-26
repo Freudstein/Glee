@@ -127,9 +127,7 @@ textarea{
 	overflow: hidden;
 	// Прижимаем footer
 	> main {
-		position: relative;
-
-		z-index: 2;
+		position: relative;		
 
 		flex: 1 1 auto;
 	}

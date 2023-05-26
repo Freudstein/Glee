@@ -10,3 +10,32 @@ $accent: #e25c7e;
     max-width: 1770px;
 }
 
+.title{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: rem(36);
+    color: #191919;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 15px;
+
+    height: 38px;
+
+    font-family: 'DM Sans';
+    font-size: rem(14);
+    line-height: lh(21, 14);
+    color: #FFF;
+
+    background-color: #a3bbc8;
+
+    transition: background-color .3s ease 0s;
+
+    &:hover{
+        background-color: #86bad6;
+    }
+}
