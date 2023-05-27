@@ -1,6 +1,7 @@
 // VARIABLES
 
 $accent: #e25c7e;
+$bottomBG: #fef7f0;
 
 // COMMON STYLES
 [class*="__container--wide"]{
@@ -13,7 +14,7 @@ $accent: #e25c7e;
 .title{
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: rem(36);
+    @include adaptiveValue('font-size', 36, 25);
     color: #191919;
 }
 
