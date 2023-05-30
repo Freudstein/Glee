@@ -28,16 +28,59 @@ const topSlider = new Swiper('.top-slider', {
 
 // products of the week - filtering cards
 
-const mixer = mixitup('.products__cards');
+const mixerProducts = mixitup('.products__cards',{
+    selectors:{
+        target: '.products__block',
+        control: '.products__control'
+    }
+});
 
-const filterMenu = document.querySelector('.products__menu');
-const menuLinks = document.querySelectorAll('.products__link');
-filterMenu.addEventListener('click', function(evt){
-    let target = evt.target;
-    if(target.classList.contains('products__link')){
-        menuLinks.forEach( elem => {
-            elem.classList.remove('products__link--current');
-        })
-        target.classList.add('products__link--current');
+const filterMenu = document.querySelectorAll('.filter-menu');
+const menuLinks = document.querySelectorAll('.filter-menu__link');
+
+filterMenu.forEach( menu => {
+    menu.addEventListener('click', function(evt){
+        let target = evt.target;
+        if(target.classList.contains('filter-menu__link')){
+            menuLinks.forEach( elem => {
+                elem.classList.remove('filter-menu__link--current');
+            })
+            target.classList.add('filter-menu__link--current');
+        }
+    })
+})
+
+// design mixitup
+
+const mixerDesign = mixitup('.design__cards',{
+    selectors:{
+        target: '.design__block',
+        control: '.design__control'
+
+    }
+})
+
+// video
+
+const videoModule = document.querySelector('.video');
+const videoButton = document.querySelector('.video__play-button');
+videoButton.addEventListener('click', function(evt){
+    const video = videoModule.querySelector('video');
+
+    if(!videoModule.classList.contains('_init')){
+        videoModule.classList.add('_active');
+        videoModule.classList.add('_init');
+            videoButton.classList.add('playing');
+        video.play();
+        video.muted = false;
+    }else{
+        if(video.paused){
+            video.play();
+        }
+        else{
+            video.pause();
+        }
+        videoModule.classList.toggle('_active');
+        videoButton.classList.toggle('playing');            
     }
 })

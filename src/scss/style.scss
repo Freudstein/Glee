@@ -513,27 +513,12 @@
     // .products__menu
     &__menu {
         margin: 0 auto;
-        @include adaptiveValue('margin-bottom', 80, 40);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px 30px;        
+        @include adaptiveValue('margin-bottom', 80, 40);             
     }
     // .products__item
     &__item {}
     // .products__link
-    &__link {        
-        font-family: 'DM Sans';
-        font-weight: 700;
-        color: #8b8b8b;
-
-        &--current{
-            pointer-events: none;
-            color: #191919;
-        }
-    }
+    &__link {}
     // .products__cards
     &__cards {
         display: flex;
@@ -628,6 +613,27 @@
 
         &.button-arrow::after{
             background: url('../img/arrow-right-dark.svg');
+        }
+    }
+}
+.filter-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;   
+    // .filter-menu__item
+    &__item {}
+    // .filter-menu__link
+    &__link {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        color: #8b8b8b;
+
+        // .filter-menu__link--current
+        &--current{
+            pointer-events: none;
+            color: #191919;
         }
     }
 }
@@ -753,14 +759,146 @@
 
 /* END OF PRODUCTS SECTION STYLES */
 
+/* DESIGN SECTION STYLES */
 
+.design {
+    @include adaptiveValue('margin-bottom', 90, 30);
+    // .design__container
+    &__container {
+        @include adaptiveValue('margin-bottom', 115, 50);
+    }
+    // .design__title
+    &__title {}
+    // .design__menu
+    &__menu {
+        margin: 0 auto;
+        @include adaptiveValue('margin-bottom', 80, 40);  
+    }
+    // .design__cards
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
 
+        margin: 0 -15px;
+    }
+    // .design__block
+    &__block {
+        flex: 1 1 33.3333%;
 
+        padding: 0 15px;
 
+        max-width: 400px;
 
+        min-width: 300px;
+    }
+    // .design__item
+    &__item {
+        padding: 40px 35px;
 
+        min-height: 245px;
 
+        background-color: #f8f8f8;
+        background-repeat: no-repeat;
+        background-position: bottom -10px right;
 
+        font-family: 'DM Sans';
+        font-weight: 700;
+        line-height: 1;
+
+        &--chair{
+            background-position: bottom 25px right 40px;
+        }
+    }
+    // .design__name
+    &__name {
+        max-width: 170px;
+        margin-bottom: 10px;
+        
+        font-size: rem(20);        
+        color: #191919;
+    }
+    // .design__style
+    &__style {
+        color: #a3bbc8;
+    }
+    // .design__video
+    &__video {
+        //height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.video {
+    position: relative;
+    &:hover{
+        .video__play-button{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 0 15px rgba(#a3bbc8, .5);
+        }
+    }
+    // .video__item
+    &__item {
+        max-height: 500px;;
+        width: 100%;
+
+        object-fit: cover;
+    }
+    // .video__play-button
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        background-color: #a3bbc8;
+        box-shadow: 0 0 0 15px rgba(#a3bbc8, .5);
+
+        transition: background-color .3s ease 0s;
+
+        display: flex;
+        justify-content: center;align-items: center;
+
+        path{
+            transition: .3s ease 0s;
+        }
+
+        &:hover{
+            path{
+                fill: #a3bbc8;
+            }
+
+            background-color: rgba(#568fad, .7);
+        }
+
+        &.playing{        
+            width: 0;
+            height: 0;
+            box-shadow: 0 0 0 0px rgba(#a3bbc8, .5);
+            transition: .3s ease 0s;
+        
+            .video__pause{
+                display: block;
+            }
+            .video__play{
+                display: none;
+            }
+        }
+    }
+    &__pause{
+        display: none;
+    }
+}
+
+/* END OF DESIGN STYLES */
 
 
 

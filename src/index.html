@@ -93,26 +93,26 @@
 			<section class="products">
 				<div class="products__container">
 					<h2 class="products__title title">Products of the week</h2>
-					<ul class="products__menu">
-						<li class="products__item">
-							<button class="products__link link-hover products__link--current" data-filter="all">All</button>
+					<ul class="products__menu filter-menu">
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover products__control filter-menu__link--current" data-filter="all">All</button>
 						</li>
-						<li class="products__item">
-							<button class="products__link link-hover" data-filter=".furnitures">Furnitures</button>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover products__control" data-filter=".furnitures">Furnitures</button>
 						</li>
-						<li class="products__item">
-							<button class="products__link link-hover" data-filter=".chairs">Chairs</button>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover products__control" data-filter=".chairs">Chairs</button>
 						</li>
-						<li class="products__item">
-							<button class="products__link link-hover" data-filter=".lightning">Lightning</button>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover products__control" data-filter=".lightning">Lightning</button>
 						</li>
-						<li class="products__item">
-							<button class="products__link link-hover" data-filter=".decor">Decor</button>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover products__control" data-filter=".decor">Decor</button>
 						</li>
 					</ul>
 
 					<div class="products__cards">
-						<div class="products__block mix furnitures">
+						<div class="products__block mix2 furnitures">
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product1.png" alt="" class="card__image">
@@ -138,7 +138,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix furnitures decor lightning">						
+						<div class="products__block mix2 furnitures decor lightning">						
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product2.png" alt="" class="card__image">
@@ -164,7 +164,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix furnitures chairs lightning">						
+						<div class="products__block mix2 furnitures chairs lightning">						
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product3.png" alt="" class="card__image">
@@ -190,7 +190,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix chairs">						
+						<div class="products__block mix2 chairs">						
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product4.png" alt="" class="card__image">
@@ -216,7 +216,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix chairs decor">
+						<div class="products__block mix2 chairs decor">
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product5.png" alt="" class="card__image">
@@ -242,7 +242,7 @@
 								</div>
 							</div>							
 						</div>
-						<div class="products__block mix lightning chairs">
+						<div class="products__block mix2 lightning chairs">
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product6.png" alt="" class="card__image">
@@ -268,7 +268,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix lightning decor">
+						<div class="products__block mix2 lightning decor">
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product7.png" alt="" class="card__image">
@@ -294,7 +294,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__block mix lightning decor chairs">
+						<div class="products__block mix2 lightning decor chairs">
 							<div class="products__card card">
 								<div class="card__figure">
 									<img src="img/products/product8.png" alt="" class="card__image">
@@ -348,6 +348,79 @@
 				</div>
 			</section>
 
+			<!-- DESIGN SECTION -->
+			<section class="design">
+				<div class="design__container">
+					<h2 class="design__title title">New Design</h2>
+					<ul class="design__menu filter-menu">
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover design__control filter-menu__link--current" data-filter="all">All</button>
+						</li>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover design__control" data-filter=".furnitures2">Furnitures</button>
+						</li>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover design__control" data-filter=".chairs2">Chairs</button>
+						</li>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover design__control" data-filter=".lightning2">Lightning</button>
+						</li>
+						<li class="filter-menu__item">
+							<button class="filter-menu__link link-hover design__control" data-filter=".decor2">Decor</button>
+						</li>
+					</ul>
+					<div class="design__cards">
+						<div class="design__block mix lightning2 decor2">
+							<div class="design__item" style="background-image:url('img/design/design1.jpg')">
+								<h5 class="design__name">Best Flat Penclant Black</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+						<div class="design__block mix lightning2 decor2">
+							<div class="design__item" style="background-image:url('img/design/design2.jpg')">
+								<h5 class="design__name">Lampe Sur Pieds Bamboo</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+						<div class="design__block mix furnitures2 chairs2">
+							<div class="design__item design__item--chair" style="background-image:url('img/design/design3.png')">
+								<h5 class="design__name">Rattan Rocking Chair</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+						<div class="design__block mix furnitures2 chairs2">
+							<div class="design__item" style="background-image:url('img/design/design4.jpg')">
+								<h5 class="design__name">Rattan Rocking Chair</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+						<div class="design__block mix decor2 chairs2 lightning2">
+							<div class="design__item design__item--chair" style="background-image:url('img/design/design5.png')">
+								<h5 class="design__name">Rattan Rocking Chair</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+						<div class="design__block mix furnitures2 chairs2 decor2">
+							<div class="design__item" style="background-image:url('img/design/design6.jpg')">
+								<h5 class="design__name">Lampe Sur Pieds Bamboo</h5>
+								<div class="design__style">Classic</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="design__video video">	
+					<video src="files/video.mp4"  muted poster="img/video-bg.jpg" class="video__item">
+					</video>
+					<button class="video__play-button">
+						<svg class="video__play" xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25">
+							<path fill="#FFF" d="M970.684,3900.74l-16.044,9.8a3.228,3.228,0,0,1-3.062.14,2.685,2.685,0,0,1-1.579-2.39V3888.7a2.685,2.685,0,0,1,1.579-2.39,3.258,3.258,0,0,1,3.062.15l16.044,9.79A2.666,2.666,0,0,1,972,3898.5,2.638,2.638,0,0,1,970.684,3900.74Z" transform="translate(-950 -3886)"/>
+						</svg>
+						<svg class="video__pause" xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 320 512">
+							<path fill="#FFF" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>
+						</svg>
+					</button>
+				</div>
+			</section>		
 		@@include('modules/_bottom.html')
 		</main>
 		@@include('modules/_footer.html')
