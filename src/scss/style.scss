@@ -900,6 +900,362 @@
 
 /* END OF DESIGN STYLES */
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/* TERMS.HTML */
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+.terms {
+    @include adaptiveValue('padding-top', 120, 60);
+    @include adaptiveValue('margin-bottom', 120, 60);
+    // .terms__container
+    &__container {}
+    // .terms__heading
+    &__heading {
+        margin-bottom: 25px;
+
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: lh(40, 24);
+    }
+    // .terms__list
+    &__list {
+        margin-left: 25px;
+        @include adaptiveValue('margin-bottom', 70, 35);
+
+        list-style: decimal-leading-zero outside;        
+    }
+    // .terms__item
+    &__item {
+        padding-left: 10px;
+
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+    // .terms__text
+    &__text {
+        @include adaptiveValue('margin-bottom', 70, 35);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/* LOGIN.HTML */
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+.login {
+    @include adaptiveValue('padding-top', 110, 55);
+    @include adaptiveValue('margin-bottom', 110, 55);
+
+    max-width: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    margin: 0 auto;
+
+    color: #436372;
+    font-size: rem(14);
+
+    // .login__form
+    &__form {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid #f6f6f6;
+    }
+    // .login__label
+    &__label {
+        display: block;
+        margin-bottom: 25px;
+
+        line-height: lh(40, 14);
+
+        cursor: pointer;
+    }
+    // .login__input
+    &__input {
+        display: flex;
+        align-items: center;
+
+        padding: 0 20px;
+
+        width: 100%;
+        height: 60px;
+
+        border: 1px solid #f6f6f6;
+
+        transition: border .3s ease 0s;
+
+        &:focus{
+            border: 1px solid $mainColor;
+        }
+    }
+    // .login__button
+    &__button {
+        display: block;
+        margin-bottom: 30px;
+
+        border-radius: 0;
+
+        width: 100%;
+    }
+    // .login__bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    // .login__checkbox-label
+    &__checkbox-label{
+        position: relative;
+
+        padding-left: 30px;
+
+        cursor: pointer;        
+    }
+    // .login__checkbox
+    &__checkbox {        
+        &:checked{
+            ~ .login__checkbox-indicator::before{
+                transform: scale(1);
+            }
+        }
+    }
+    // .login__checkbox-indicator
+    &__checkbox-indicator {
+        position: absolute;
+        top: 5px;
+        left: 0;
+
+        width: 15px;
+        height: 15px;
+
+        border-radius: 2px;
+        background-color: #ebebeb;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 3px;
+
+            height: 8px;
+            width: 10px;
+
+            background: url('../img/checkbox.svg') 50% / cover no-repeat;
+
+            transition: transform .3s ease 0s;
+            transform: scale(0);
+
+        }
+    }
+    // .login__link
+    &__link {}
+    // .login__text
+    &__text {
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+    // .login__register
+    &__register {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: rem(18);
+        font-weight: 700;
+
+        height: 60px;
+
+        border: 1px solid #a3bbc8;
+
+        transition: .3s ease 0s;
+
+        &:hover{
+            border: 1px solid $mainColor;
+
+            color: #000;
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/* CONTACTS.HTML */
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+.contact {
+    @include adaptiveValue('padding-top', 110, 55);
+    @include adaptiveValue('margin-bottom', 110, 55);
+
+    // .contact__container
+    &__container {}
+    // .contact__subheading
+    &__subheading {
+        margin-bottom: 15px;
+
+        font-weight: 700;
+        line-height: lh(16, 20);
+        color: #a3bbc8;
+        text-align: center;
+    }
+    // .contact__title
+    &__title {
+        @include adaptiveValue('margin-bottom', 70, 50);
+
+        text-align: center;
+    }
+    // .contact__info
+    &__info {
+        @include adaptiveValue('margin-bottom', 120, 60);
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+
+        margin: 0 -15px;        
+    }
+    // .contact__block
+    &__block {
+        flex: 1 1 33.33333%;
+
+        padding: 0 15px;
+
+        min-width: 290px;
+        max-width: 450px;
+    }
+    // .contact__item
+    &__item {
+        @include adaptiveValue('padding-top', 70, 40);
+        @include adaptiveValue('padding-bottom', 70, 40);
+
+        background-color: #f9f9f9;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid transparent;
+
+        transition: border .3s ease 0s;
+
+        height: 100%;
+
+        path{
+            transition: .3s ease 0s;
+        }
+
+        &:hover{
+            border: 1px solid #a3bbc8;
+
+            path{
+                fill: #FFF;
+            }
+
+            .contact__img-block{
+                background-color: #a3bbc8;
+            }
+        }
+    }
+    // .contact__img-block
+    &__img-block {
+        @include adaptiveValue('margin-bottom', 65, 45);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        background-color: #fff;
+
+        width: 80px;
+        height: 80px;
+
+        transition: background-color .3s ease 0s;
+    }
+    // .contact__name
+    &__name {
+        margin-bottom: 15px;
+
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: lh(26, 20);
+        color: #222222;
+    }
+    // .contact__text
+    &__text {
+        color: #565872;
+
+        text-align: center;
+    }
+    // .contact__bottom
+    &__bottom {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    // .contact__form
+    &__form {
+        max-width: 620px;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    // .contact__map
+    &__map {
+        text-align: center;
+        flex: 1 1 500px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.form-contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    // .form-contact__item
+    &__item{        
+        background-color: #fafafa;
+        border: 1px solid transparent;
+
+        transition: border .3s ease 0s;
+
+        &::placeholder{
+            text-transform: uppercase;
+            color: #565872;
+        }
+
+        &:focus{
+            border: 1px solid #000;
+        }
+    }
+    // .form-contact__input
+    &__input {
+        flex: 1 1 auto;
+
+        padding: 0 20px;
+
+        display: flex;
+        align-items: center;
+
+        height: 50px;
+    }
+    // .form-contact__textarea
+    &__textarea {
+        padding: 20px;
+        height: 170px;
+        min-height: 170px;
+        width: 100%;
+        resize: vertical;
+    }
+    // .form-contact__button
+    &__button {}
+}
 
 
 
@@ -922,6 +1278,81 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+/* TOP OF EVERY PAGE AFTER MENU */
+
+.page-name {
+    padding: 30px 0;
+
+    background-color: #edf1f4;
+    // .page-name__heading
+    &__heading {
+        margin-bottom: 15px;
+
+        color: #222933;
+        font-weight: 300;
+        font-size: rem(36);
+        line-height: lh(24, 36);
+        text-align: center;
+    }
+    // .page-name__breakcrumbs
+    &__breakcrumbs {
+        font-size: rem(14);
+        line-height: lh(24, 14);
+        color: #929292;
+        text-align: center;
+    }
+    // .page-name__link
+    &__link {}
+}
 
 /* BOTTOM BLOCK STYLES */
 
@@ -1310,3 +1741,4 @@
 }
 
 /* END OF FOOTER STYLES */
+

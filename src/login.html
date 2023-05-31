@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="wrapper bottom-short">
+		@@include('modules/_header.html')
+		<main>
+            @@include('modules/_page-name.html',{
+                "title": "Log in"
+            })
+
+            <section class="login">
+                <form action="#" class="login__form">
+                    <label class="login__label">
+                        Username or email address *
+                        <input type="text" class="login__input">
+                    </label>
+                    <label class="login__label">
+                        Password *
+                        <input type="password" class="login__input">
+                    </label>
+                    <button class="login__button button" type="submit">Login</button>
+                    <div class="login__bottom">
+                        <label class="login__checkbox-label">
+                            <input class="login__checkbox visually-hidden" type="checkbox" checked>
+                            <span class="login__checkbox-indicator"></span>
+                            <div class="link-hover">Remember me</div>
+                        </label>
+                        <a href="#" class="login__link link-hover">Lost Your password?</a>
+                    </div>
+                </form>
+                <p class="login__text">Not registered? No problem!</p>
+                <a href="#" class="login__register">Create an account</a>
+            </section>
+
+            @@include('modules/_bottom.html')
+		</main>
+		@@include('modules/_footer.html')
+	</div>	
+	<script src="js/app.min.js"></script>
+</body>
+</html>
