@@ -294,3 +294,89 @@ if(document.querySelector('.related__slider')){
         }
     });
 }
+
+//card rating
+
+if(document.querySelector('.card__rating')){
+    $(function () { 
+        $('.card__rating').rateYo({
+            starWidth: '16px',
+            ratedFill: "#ffcc00",
+            rating: 4.6,
+            spacing: "10px",
+        });       
+    });
+}
+
+if(document.querySelector('.recent__rating')){
+    $(function () { 
+        $('.recent__rating').rateYo({
+            starWidth: '10px',
+            ratedFill: "#ffcc00",
+            rating: 4.6,
+            spacing: "5px",
+        });       
+    });
+}
+
+// changing products view
+
+const buttonList = document.querySelector('.catalogue__nav-list');
+const buttonGrid = document.querySelector('.catalogue__nav-grid');
+const pageWrapper = document.querySelector('.wrapper');
+
+buttonList.addEventListener('click', function(){
+    pageWrapper.classList.add('catalogue-list');
+    buttonGrid.classList.remove('button-active');
+    buttonList.classList.add('button-active');
+})
+
+buttonGrid.addEventListener('click', function(){
+    pageWrapper.classList.remove('catalogue-list');
+    buttonList.classList.remove('button-active');
+    buttonGrid.classList.add('button-active');
+})
+
+// range slider
+
+if(document.querySelector('.price__slider')){
+    const priceSlider = document.querySelector('.price__slider');
+
+    noUiSlider.create(priceSlider, {
+        start: [200, 800],
+        connect: true,
+        range: {
+            'min': 100,
+            'max': 2000
+        }
+    });
+
+    const input0 = document.querySelector('#input-from');
+    const input1 = document.querySelector('#input-to');
+    const inputs = [input0, input1];
+
+    priceSlider.noUiSlider.on('update', function(values, handle){
+        inputs[handle].value = Math.round(values[handle]);
+    });
+
+    function setRangeSlider(i, value){
+        let arr = [null, null];
+        arr[i] = value;
+
+        priceSlider.noUiSlider.set(arr);
+    }
+
+    inputs.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+            setRangeSlider(index, e.currentTarget.value);
+        })
+    })
+}
+
+// filter-button
+
+const filterButton = document.querySelector('.filter-button');
+const filtersMenu = document.querySelector('.filters');
+filterButton.addEventListener('click', function(){
+    filtersMenu.classList.toggle('filters-active')
+});
