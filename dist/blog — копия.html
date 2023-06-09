@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="wrapper bottom-short">
+		<header class="header">
+    <div class="header__container header__container--wide">        
+        <div class="header__inner">            
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="header__menu menu">                
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Pages +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__user-menu user-menu">
+                <form action="#" class="user-menu__form">
+                    <label class="user-menu__label">
+                        <input class="user-menu__search visually-hidden" type="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">                    
+                            <path fill="#243f4d" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                        </svg>                  
+                    </label>            
+                </form>
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19px" height="17px">
+                                <path fill="#243f4d" d="M9.913,16.244 C9.818,16.244 9.722,16.226 9.633,16.188 C9.280,16.039 0.983,12.439 0.983,5.429 C1.074,2.779 3.190,0.721 5.801,0.721 C7.544,0.721 9.067,1.639 9.913,3.031 C10.760,1.639 12.282,0.721 14.025,0.721 C16.634,0.721 18.750,2.779 18.842,5.405 C18.842,12.439 10.545,16.039 10.193,16.188 C10.103,16.226 10.008,16.244 9.913,16.244 ZM5.801,2.106 C3.954,2.106 2.458,3.576 2.393,5.452 C2.393,10.860 8.518,14.115 9.913,14.787 C11.308,14.115 17.433,10.857 17.433,5.429 C17.368,3.576 15.870,2.106 14.025,2.106 C12.180,2.106 10.683,3.576 10.617,5.452 C10.605,5.825 10.293,6.121 9.913,6.121 L9.913,6.121 C9.533,6.121 9.221,5.825 9.208,5.452 C9.144,3.576 7.647,2.106 5.801,2.106 Z"/>
+                            </svg>
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969" viewBox="0 0 18.94 16.969">
+                                <path fill="#243f4d" d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                            </svg>                      
+                            <span>3</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-menu__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px">
+                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M17.883,12.750 C16.696,12.750 15.737,11.790 15.737,10.603 C15.737,9.417 16.696,8.458 17.883,8.458 C19.070,8.458 20.029,9.417 20.029,10.603 C20.029,11.790 19.070,12.750 17.883,12.750 ZM17.883,4.881 C16.696,4.881 15.737,3.921 15.737,2.735 C15.737,1.548 16.696,0.589 17.883,0.589 C19.070,0.589 20.029,1.548 20.029,2.735 C20.029,3.921 19.070,4.881 17.883,4.881 ZM10.014,20.618 C8.828,20.618 7.868,19.659 7.868,18.472 C7.868,17.285 8.828,16.326 10.014,16.326 C11.201,16.326 12.160,17.285 12.160,18.472 C12.160,19.659 11.201,20.618 10.014,20.618 ZM10.014,12.750 C8.828,12.750 7.868,11.790 7.868,10.603 C7.868,9.417 8.828,8.458 10.014,8.458 C11.201,8.458 12.160,9.417 12.160,10.603 C12.160,11.790 11.201,12.750 10.014,12.750 ZM10.014,4.881 C8.828,4.881 7.868,3.921 7.868,2.735 C7.868,1.548 8.828,0.589 10.014,0.589 C11.201,0.589 12.160,1.548 12.160,2.735 C12.160,3.921 11.201,4.881 10.014,4.881 ZM2.146,20.618 C0.959,20.618 -0.000,19.659 -0.000,18.472 C-0.000,17.285 0.959,16.326 2.146,16.326 C3.333,16.326 4.292,17.285 4.292,18.472 C4.292,19.659 3.333,20.618 2.146,20.618 ZM2.146,12.750 C0.959,12.750 -0.000,11.790 -0.000,10.603 C-0.000,9.417 0.959,8.458 2.146,8.458 C3.333,8.458 4.292,9.417 4.292,10.603 C4.292,11.790 3.333,12.750 2.146,12.750 ZM2.146,4.881 C0.959,4.881 -0.000,3.921 -0.000,2.735 C-0.000,1.548 0.959,0.589 2.146,0.589 C3.333,0.589 4.292,1.548 4.292,2.735 C4.292,3.921 3.333,4.881 2.146,4.881 ZM17.883,16.326 C19.070,16.326 20.029,17.285 20.029,18.472 C20.029,19.659 19.070,20.618 17.883,20.618 C16.696,20.618 15.737,19.659 15.737,18.472 C15.737,17.285 16.696,16.326 17.883,16.326 Z"/>
+                    </svg>
+                </div>
+                <button type="button" class="menu__icon icon-menu"><span></span></button>
+            </div>
+            
+        </div>
+    </div>
+</header>
+		<main>
+            <div class="page-name">
+    <h2 class="page-name__heading">Blog</h2>
+    <p class="page-name__breakcrumbs">
+        <a href="#" class="page-name__link link-hover">Home</a>
+         / <span>Blog</span>
+    </p>
+</div>
+
+            <button class="filter-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="45" viewBox="0 0 512 512">
+                    <path fill="#FFF" stroke-width="25" stroke="#a3bbc8" d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/>
+                </svg>
+            </button>
+            <section class="blog">
+                <div class="blog__container">
+                    <div class="blog__inner">
+                        <div class="blog__body">
+                            <div class="blog__body-items">
+                                <div class="blog__item">
+                                    <div class="blog__figure _ibg">
+                                        <img src="img/blog/blog1.jpg" alt="">
+                                        <div class="blog__inscription">
+                                            <div class="blog__date">28 January, 2020</div>
+                                            <a href="#" class="blog__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog__button button button-arrow">View more</button>
+                                </div>
+                                <div class="blog__item">
+                                    <div class="blog__figure _ibg">
+                                        <img src="img/blog/blog2.jpg" alt="">
+                                        <div class="blog__inscription">
+                                            <div class="blog__date">28 January, 2020</div>
+                                            <a href="#" class="blog__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog__button button button-arrow">View more</button>
+                                </div>
+                                <div class="blog__item">
+                                    <div class="blog__figure _ibg">
+                                        <img src="img/blog/blog3.jpg" alt="">
+                                        <div class="blog__inscription">
+                                            <div class="blog__date">28 January, 2020</div>
+                                            <a href="#" class="blog__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog__button button button-arrow">View more</button>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <div class="blog__pagination pagination">
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link pagination__link--text">NEXT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="blog__filters filters">
+                            <div class="filters__search search">
+                                <form action="" class="search__form">
+                                    <input class="search__input" type="search">
+                                    <button class="search__button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(9, 64, 116)" d="M17.249,17.920 C17.098,17.920 16.946,17.862 16.830,17.746 L11.531,12.448 C10.398,13.393 8.941,13.962 7.353,13.962 C3.752,13.962 0.822,11.032 0.822,7.431 C0.822,3.829 3.752,0.899 7.353,0.899 C10.955,0.899 13.884,3.829 13.884,7.431 C13.884,9.018 13.316,10.475 12.371,11.609 L17.669,16.907 C17.785,17.023 17.843,17.175 17.843,17.327 C17.843,17.478 17.785,17.630 17.669,17.746 C17.553,17.862 17.401,17.920 17.249,17.920 ZM7.353,2.087 C4.407,2.087 2.010,4.484 2.010,7.431 C2.010,10.377 4.407,12.775 7.353,12.775 C10.300,12.775 12.698,10.377 12.698,7.431 C12.698,4.484 10.300,2.087 7.353,2.087 Z"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- category -->
+                            <div class="filters__category category">
+                                <h4 class="category__title filters-title">Category</h4>
+                                <form action="#">
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Chair</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Table</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Lamp</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Watch</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Clock</div>
+                                    </label>
+                                </form>
+                            </div>
+
+                            <!-- recent posts -->
+                            <div class="blog__recent recent-blog">
+                                <h4 class="recent-blog__title filters-title">Recent posts</h4>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-1.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Corem ipsum dolor tetur adipisicing elit</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-2.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Fdipisicing elit, sed do eiusmod tempor</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-3.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Eonsectetur adipisicing elit, sed do eiusmod </h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-4.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Gnim ad minim veniam, quis nostrud</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <div class="overlay"></div>
+            <section class="insights short">
+    <div class="insights__container">
+        <div class="insights__header">            
+            <h2 class="insights__title title">Our Insights & Articles</h2>
+            <a href="#" class="insights__title-link">
+                View All
+                <svg xmlns="http://www.w3.org/2000/svg" width="7px" height="12px">
+                <path fill="#262626" d="M1.333,11.687 C1.184,11.687 1.034,11.626 0.922,11.504 C0.819,11.390 0.767,11.245 0.767,11.100 C0.767,10.943 0.826,10.789 0.944,10.673 L5.491,6.198 L0.944,1.724 C0.826,1.609 0.767,1.453 0.767,1.297 C0.767,1.152 0.819,1.007 0.922,0.893 C1.138,0.657 1.496,0.647 1.723,0.870 L6.700,5.768 C6.705,5.772 6.709,5.777 6.714,5.782 C6.762,5.831 6.801,5.889 6.827,5.951 L6.827,5.951 C6.828,5.951 6.828,5.951 6.828,5.951 C6.862,6.029 6.880,6.112 6.880,6.195 C6.880,6.196 6.880,6.197 6.880,6.198 C6.880,6.284 6.862,6.369 6.827,6.447 L6.827,6.447 C6.827,6.448 6.826,6.448 6.826,6.448 C6.826,6.449 6.826,6.449 6.826,6.449 C6.826,6.449 6.826,6.449 6.826,6.450 C6.799,6.509 6.762,6.565 6.715,6.614 C6.710,6.619 6.705,6.623 6.700,6.628 L1.723,11.527 C1.614,11.635 1.473,11.687 1.333,11.687 Z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="insights__articles articles">                
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles1.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles2.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles3.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Rncididunt ut labore et dolore magna aliqua. Ut enim
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="insights__partners partners">
+        <div class="insights__container">
+            <div class="partners__inner">
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner1.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner2.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner3.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner4.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner5.png" alt="Partner">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__inner">
+            <div class="footer__contact">
+                <img src="img/logo.svg" alt="Logo">
+                <p class="footer__address">
+                    ADDRESS: 4772 Wines Lane
+                    Houston, TX 77032
+                </p>
+                <p class="footer__phone">
+                    TELEPHONE: 
+                    <a class="footer__link" href="tel:+8323475843"> +832-347-5843</a>
+                </p>
+                <p class="footer__email">
+                    E-MAIL: 
+                    <a class="footer__link" href="mailto:contact@glee.com">contact@glee.com</a>
+                </p>
+            </div>
+            <div class="footer__services">
+                <h6 class="footer__title">Services</h6>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">About Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Return Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Our Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Contact Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__account">
+                <h6 class="footer__title">Account</h6>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Your account</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Checkout</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Login</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <h6 class="footer__title">Newsletter</h6>
+                <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+                <form action="#" class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Email address">
+                    <button class="footer__btn button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&#169;2020 CopyRight Example. All rights reserved.</p>
+            <ul class="footer__menu">
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Home</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">About</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Blog</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+	</div>	
+	<script src="js/app.min.js"></script>
+</body>
+</html>

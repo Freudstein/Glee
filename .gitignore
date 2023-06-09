@@ -5,10 +5,8 @@
 *.sublime*
 npm-debug.*
 
-dist/
+
 build/
 node_modules/
 package-lock.json
 app/css*
-package.json
-gulpfile.js

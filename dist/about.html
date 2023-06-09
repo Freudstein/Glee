@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__container header__container--wide">        
+        <div class="header__inner">            
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="header__menu menu">                
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Pages +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__user-menu user-menu">
+                <form action="#" class="user-menu__form">
+                    <label class="user-menu__label">
+                        <input class="user-menu__search visually-hidden" type="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">                    
+                            <path fill="#243f4d" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                        </svg>                  
+                    </label>            
+                </form>
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19px" height="17px">
+                                <path fill="#243f4d" d="M9.913,16.244 C9.818,16.244 9.722,16.226 9.633,16.188 C9.280,16.039 0.983,12.439 0.983,5.429 C1.074,2.779 3.190,0.721 5.801,0.721 C7.544,0.721 9.067,1.639 9.913,3.031 C10.760,1.639 12.282,0.721 14.025,0.721 C16.634,0.721 18.750,2.779 18.842,5.405 C18.842,12.439 10.545,16.039 10.193,16.188 C10.103,16.226 10.008,16.244 9.913,16.244 ZM5.801,2.106 C3.954,2.106 2.458,3.576 2.393,5.452 C2.393,10.860 8.518,14.115 9.913,14.787 C11.308,14.115 17.433,10.857 17.433,5.429 C17.368,3.576 15.870,2.106 14.025,2.106 C12.180,2.106 10.683,3.576 10.617,5.452 C10.605,5.825 10.293,6.121 9.913,6.121 L9.913,6.121 C9.533,6.121 9.221,5.825 9.208,5.452 C9.144,3.576 7.647,2.106 5.801,2.106 Z"/>
+                            </svg>
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a href="#" class="user-menu__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969" viewBox="0 0 18.94 16.969">
+                                <path fill="#243f4d" d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                            </svg>                      
+                            <span>3</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-menu__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px">
+                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M17.883,12.750 C16.696,12.750 15.737,11.790 15.737,10.603 C15.737,9.417 16.696,8.458 17.883,8.458 C19.070,8.458 20.029,9.417 20.029,10.603 C20.029,11.790 19.070,12.750 17.883,12.750 ZM17.883,4.881 C16.696,4.881 15.737,3.921 15.737,2.735 C15.737,1.548 16.696,0.589 17.883,0.589 C19.070,0.589 20.029,1.548 20.029,2.735 C20.029,3.921 19.070,4.881 17.883,4.881 ZM10.014,20.618 C8.828,20.618 7.868,19.659 7.868,18.472 C7.868,17.285 8.828,16.326 10.014,16.326 C11.201,16.326 12.160,17.285 12.160,18.472 C12.160,19.659 11.201,20.618 10.014,20.618 ZM10.014,12.750 C8.828,12.750 7.868,11.790 7.868,10.603 C7.868,9.417 8.828,8.458 10.014,8.458 C11.201,8.458 12.160,9.417 12.160,10.603 C12.160,11.790 11.201,12.750 10.014,12.750 ZM10.014,4.881 C8.828,4.881 7.868,3.921 7.868,2.735 C7.868,1.548 8.828,0.589 10.014,0.589 C11.201,0.589 12.160,1.548 12.160,2.735 C12.160,3.921 11.201,4.881 10.014,4.881 ZM2.146,20.618 C0.959,20.618 -0.000,19.659 -0.000,18.472 C-0.000,17.285 0.959,16.326 2.146,16.326 C3.333,16.326 4.292,17.285 4.292,18.472 C4.292,19.659 3.333,20.618 2.146,20.618 ZM2.146,12.750 C0.959,12.750 -0.000,11.790 -0.000,10.603 C-0.000,9.417 0.959,8.458 2.146,8.458 C3.333,8.458 4.292,9.417 4.292,10.603 C4.292,11.790 3.333,12.750 2.146,12.750 ZM2.146,4.881 C0.959,4.881 -0.000,3.921 -0.000,2.735 C-0.000,1.548 0.959,0.589 2.146,0.589 C3.333,0.589 4.292,1.548 4.292,2.735 C4.292,3.921 3.333,4.881 2.146,4.881 ZM17.883,16.326 C19.070,16.326 20.029,17.285 20.029,18.472 C20.029,19.659 19.070,20.618 17.883,20.618 C16.696,20.618 15.737,19.659 15.737,18.472 C15.737,17.285 16.696,16.326 17.883,16.326 Z"/>
+                    </svg>
+                </div>
+                <button type="button" class="menu__icon icon-menu"><span></span></button>
+            </div>
+            
+        </div>
+    </div>
+</header>
+		<main>
+            <div class="page-name">
+    <h2 class="page-name__heading">About Us</h2>
+    <p class="page-name__breakcrumbs">
+        <a href="#" class="page-name__link link-hover">Home</a>
+         / <span>About Us</span>
+    </p>
+</div>
+
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__inner">
+                        <div class="about__block">
+                            <div class="about__column">
+                                <img src="img/about/about.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="about__block">
+                            <div class="about__column">
+                                <div class="about__experience">
+                                    <span>12</span>
+                                    <p>Years Experience Working</p>
+                                </div>
+                                <div class="about__title title">Mission of our creative house</div>
+                                <div class="about__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                </div>
+                                <div class="about__stats">
+                                    <div class="about__stats-item">
+                                        <img src="img/about/stats1.svg" alt="">
+                                        <div class="about__stats-block">
+                                            <span class="title">520+</span>
+                                            Projects
+                                        </div>
+                                    </div>
+                                    <div class="about__stats-item">
+                                        <img src="img/about/stats2.svg" alt="">
+                                        <div class="about__stats-block">
+                                            <span class="title">$4M</span>
+                                            Revenue
+                                        </div>
+                                    </div>
+                                    <div class="about__stats-item">
+                                        <img src="img/about/stats3.svg" alt="">
+                                        <div class="about__stats-block">
+                                            <span class="title">250</span>
+                                            Awards
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="statistics">
+                <div class="statistics__container">
+                    <div class="statistics__item">
+                        <div class="statistics__picture">
+                            <img src="img/about/statistics1.svg" alt="">
+                        </div>
+                        <p class="statistics__value title">99%</p>
+                        <div class="statistics__legend">Satisfied Clients Rate</div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__picture">
+                            <img src="img/about/statistics2.svg" alt="">
+                        </div>
+                        <p class="statistics__value title">5020+</p>
+                        <div class="statistics__legend">Products Delivered</div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__picture">
+                            <img src="img/about/statistics3.svg" alt="">
+                        </div>
+                        <p class="statistics__value title">23hr</p>
+                        <div class="statistics__legend">Daily Working Time</div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__picture">
+                            <img src="img/about/statistics4.svg" alt="">
+                        </div>
+                        <p class="statistics__value title">140+</p>
+                        <div class="statistics__legend">Brands in Store</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="team">
+                <div class="team__container">
+                    <div class="team__info">
+                        <div class="team__title title">Our team</div>
+                        <p class="team__text">
+                            Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <a href="#" class="team__button button button-arrow">Join With Us</a>
+                    </div>
+                    
+                    <div class="team__cards">
+                        <div class="team__block">
+                            <div class="team__card">
+                                <div class="team__picture _ibg">
+                                    <img src="img/about/team1.jpg" alt="">
+                                </div>
+                                <div class="team__card-info">
+                                    <div class="team__person">
+                                        <div class="team__name">Eliza Elliot</div>
+                                        <div class="team__profession">Commodo Tempor</div>
+                                    </div>
+                                    <div class="team__social">
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.19" height="17.19" viewBox="0 0 17.19 17.19">
+                                                <path fill="#888" d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z" transform="translate(-1001 -1945)"/>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.66" height="14.38" viewBox="0 0 22.66 14.38">
+                                                <path fill="#888" d="M1052.75,1960.35a7.121,7.121,0,0,1-6.59-5.65,6.6,6.6,0,0,1-.14-1.93,7.277,7.277,0,0,1,5.49-6.56,5.282,5.282,0,0,1,1.18-.19c0.23-.01.46-0.02,0.69-0.02a6.786,6.786,0,0,1,3.4.93,9.386,9.386,0,0,1,1.27.93c-0.72.71-1.41,1.4-2.11,2.09a3.914,3.914,0,0,0-2.1-1.02,4.259,4.259,0,0,0-.61-0.04,4.307,4.307,0,0,0-4.14,3.35,3.817,3.817,0,0,0-.1,1.3,4.3,4.3,0,0,0,2.94,3.74,4.35,4.35,0,0,0,1.25.19c0.1,0,.2-0.01.3-0.01a4.2,4.2,0,0,0,2.09-.67,3.314,3.314,0,0,0,1.43-2.17h-3.85c0-.09.02-1.89,0.02-2.76l0.01-.12h6.76a7.773,7.773,0,0,1-1.28,6.05,6.273,6.273,0,0,1-3.55,2.32,7.539,7.539,0,0,1-1.94.25C1053.03,1960.36,1052.89,1960.36,1052.75,1960.35Zm13.33-4.05h-1.89v-0.07l0.02-2.43h-2.51v-0.08l0.02-1.82v-0.07h2.5l0.02-2.43v-0.07h1.96v0.07l-0.02,2.43h2.51v0.07l-0.01,1.82v0.08h-2.51l-0.02,2.43v0.07h-0.07Z" transform="translate(-1046.03 -1946)"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__block">
+                            <div class="team__card">
+                                <div class="team__picture _ibg">
+                                    <img src="img/about/team2.jpg" alt="">
+                                </div>
+                                <div class="team__card-info">
+                                    <div class="team__person">
+                                        <div class="team__name">Roscoe A.</div>
+                                        <div class="team__profession">Commodo Tempor</div>
+                                    </div>
+                                    <div class="team__social">
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.19" height="17.19" viewBox="0 0 17.19 17.19">
+                                                <path fill="#888" d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z" transform="translate(-1001 -1945)"/>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.66" height="14.38" viewBox="0 0 22.66 14.38">
+                                                <path fill="#888" d="M1052.75,1960.35a7.121,7.121,0,0,1-6.59-5.65,6.6,6.6,0,0,1-.14-1.93,7.277,7.277,0,0,1,5.49-6.56,5.282,5.282,0,0,1,1.18-.19c0.23-.01.46-0.02,0.69-0.02a6.786,6.786,0,0,1,3.4.93,9.386,9.386,0,0,1,1.27.93c-0.72.71-1.41,1.4-2.11,2.09a3.914,3.914,0,0,0-2.1-1.02,4.259,4.259,0,0,0-.61-0.04,4.307,4.307,0,0,0-4.14,3.35,3.817,3.817,0,0,0-.1,1.3,4.3,4.3,0,0,0,2.94,3.74,4.35,4.35,0,0,0,1.25.19c0.1,0,.2-0.01.3-0.01a4.2,4.2,0,0,0,2.09-.67,3.314,3.314,0,0,0,1.43-2.17h-3.85c0-.09.02-1.89,0.02-2.76l0.01-.12h6.76a7.773,7.773,0,0,1-1.28,6.05,6.273,6.273,0,0,1-3.55,2.32,7.539,7.539,0,0,1-1.94.25C1053.03,1960.36,1052.89,1960.36,1052.75,1960.35Zm13.33-4.05h-1.89v-0.07l0.02-2.43h-2.51v-0.08l0.02-1.82v-0.07h2.5l0.02-2.43v-0.07h1.96v0.07l-0.02,2.43h2.51v0.07l-0.01,1.82v0.08h-2.51l-0.02,2.43v0.07h-0.07Z" transform="translate(-1046.03 -1946)"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__block">
+                            <div class="team__card">
+                                <div class="team__picture _ibg">
+                                    <img src="img/about/team3.jpg" alt="">
+                                </div>
+                                <div class="team__card-info">
+                                    <div class="team__person">
+                                        <div class="team__name">Ruby M.</div>
+                                        <div class="team__profession">Commodo Tempor</div>
+                                    </div>
+                                    <div class="team__social">
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.19" height="17.19" viewBox="0 0 17.19 17.19">
+                                                <path fill="#888" d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z" transform="translate(-1001 -1945)"/>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.66" height="14.38" viewBox="0 0 22.66 14.38">
+                                                <path fill="#888" d="M1052.75,1960.35a7.121,7.121,0,0,1-6.59-5.65,6.6,6.6,0,0,1-.14-1.93,7.277,7.277,0,0,1,5.49-6.56,5.282,5.282,0,0,1,1.18-.19c0.23-.01.46-0.02,0.69-0.02a6.786,6.786,0,0,1,3.4.93,9.386,9.386,0,0,1,1.27.93c-0.72.71-1.41,1.4-2.11,2.09a3.914,3.914,0,0,0-2.1-1.02,4.259,4.259,0,0,0-.61-0.04,4.307,4.307,0,0,0-4.14,3.35,3.817,3.817,0,0,0-.1,1.3,4.3,4.3,0,0,0,2.94,3.74,4.35,4.35,0,0,0,1.25.19c0.1,0,.2-0.01.3-0.01a4.2,4.2,0,0,0,2.09-.67,3.314,3.314,0,0,0,1.43-2.17h-3.85c0-.09.02-1.89,0.02-2.76l0.01-.12h6.76a7.773,7.773,0,0,1-1.28,6.05,6.273,6.273,0,0,1-3.55,2.32,7.539,7.539,0,0,1-1.94.25C1053.03,1960.36,1052.89,1960.36,1052.75,1960.35Zm13.33-4.05h-1.89v-0.07l0.02-2.43h-2.51v-0.08l0.02-1.82v-0.07h2.5l0.02-2.43v-0.07h1.96v0.07l-0.02,2.43h2.51v0.07l-0.01,1.82v0.08h-2.51l-0.02,2.43v0.07h-0.07Z" transform="translate(-1046.03 -1946)"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__block">
+                            <div class="team__card">
+                                <div class="team__picture _ibg">
+                                    <img src="img/about/team4.jpg" alt="">
+                                </div>
+                                <div class="team__card-info">
+                                    <div class="team__person">
+                                        <div class="team__name">Marie F. Bloss</div>
+                                        <div class="team__profession">Commodo Tempor</div>
+                                    </div>
+                                    <div class="team__social">
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.19" height="17.19" viewBox="0 0 17.19 17.19">
+                                                <path fill="#888" d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z" transform="translate(-1001 -1945)"/>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="team__social-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.66" height="14.38" viewBox="0 0 22.66 14.38">
+                                                <path fill="#888" d="M1052.75,1960.35a7.121,7.121,0,0,1-6.59-5.65,6.6,6.6,0,0,1-.14-1.93,7.277,7.277,0,0,1,5.49-6.56,5.282,5.282,0,0,1,1.18-.19c0.23-.01.46-0.02,0.69-0.02a6.786,6.786,0,0,1,3.4.93,9.386,9.386,0,0,1,1.27.93c-0.72.71-1.41,1.4-2.11,2.09a3.914,3.914,0,0,0-2.1-1.02,4.259,4.259,0,0,0-.61-0.04,4.307,4.307,0,0,0-4.14,3.35,3.817,3.817,0,0,0-.1,1.3,4.3,4.3,0,0,0,2.94,3.74,4.35,4.35,0,0,0,1.25.19c0.1,0,.2-0.01.3-0.01a4.2,4.2,0,0,0,2.09-.67,3.314,3.314,0,0,0,1.43-2.17h-3.85c0-.09.02-1.89,0.02-2.76l0.01-.12h6.76a7.773,7.773,0,0,1-1.28,6.05,6.273,6.273,0,0,1-3.55,2.32,7.539,7.539,0,0,1-1.94.25C1053.03,1960.36,1052.89,1960.36,1052.75,1960.35Zm13.33-4.05h-1.89v-0.07l0.02-2.43h-2.51v-0.08l0.02-1.82v-0.07h2.5l0.02-2.43v-0.07h1.96v0.07l-0.02,2.43h2.51v0.07l-0.01,1.82v0.08h-2.51l-0.02,2.43v0.07h-0.07Z" transform="translate(-1046.03 -1946)"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>               
+                        </div>         
+                    </div>
+                </div>
+            </section>
+
+            <section class="insights short">
+    <div class="insights__container">
+        <div class="insights__header">            
+            <h2 class="insights__title title">Our Insights & Articles</h2>
+            <a href="#" class="insights__title-link">
+                View All
+                <svg xmlns="http://www.w3.org/2000/svg" width="7px" height="12px">
+                <path fill="#262626" d="M1.333,11.687 C1.184,11.687 1.034,11.626 0.922,11.504 C0.819,11.390 0.767,11.245 0.767,11.100 C0.767,10.943 0.826,10.789 0.944,10.673 L5.491,6.198 L0.944,1.724 C0.826,1.609 0.767,1.453 0.767,1.297 C0.767,1.152 0.819,1.007 0.922,0.893 C1.138,0.657 1.496,0.647 1.723,0.870 L6.700,5.768 C6.705,5.772 6.709,5.777 6.714,5.782 C6.762,5.831 6.801,5.889 6.827,5.951 L6.827,5.951 C6.828,5.951 6.828,5.951 6.828,5.951 C6.862,6.029 6.880,6.112 6.880,6.195 C6.880,6.196 6.880,6.197 6.880,6.198 C6.880,6.284 6.862,6.369 6.827,6.447 L6.827,6.447 C6.827,6.448 6.826,6.448 6.826,6.448 C6.826,6.449 6.826,6.449 6.826,6.449 C6.826,6.449 6.826,6.449 6.826,6.450 C6.799,6.509 6.762,6.565 6.715,6.614 C6.710,6.619 6.705,6.623 6.700,6.628 L1.723,11.527 C1.614,11.635 1.473,11.687 1.333,11.687 Z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="insights__articles articles">                
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles1.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles2.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__item">
+                    <a href="#" class="articles__link _ibg">
+                        <img class="articles__image" src="img/_bottom/articles3.jpg" alt="">
+                        <span>News</span>
+                    </a>
+                    <div class="articles__content">
+                        <div class="articles__text">
+                            Rncididunt ut labore et dolore magna aliqua. Ut enim
+                        </div>
+                        <div class="articles__info">
+                            <p class="articles__date">28 January, 2020</p>
+                            <p class="articles__author">By Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="insights__partners partners">
+        <div class="insights__container">
+            <div class="partners__inner">
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner1.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner2.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner3.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner4.png" alt="Partner">
+                </a>
+                <a href="#" class="partners__link">
+                    <img src="img/_bottom/partner5.png" alt="Partner">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__inner">
+            <div class="footer__contact">
+                <img src="img/logo.svg" alt="Logo">
+                <p class="footer__address">
+                    ADDRESS: 4772 Wines Lane
+                    Houston, TX 77032
+                </p>
+                <p class="footer__phone">
+                    TELEPHONE: 
+                    <a class="footer__link" href="tel:+8323475843"> +832-347-5843</a>
+                </p>
+                <p class="footer__email">
+                    E-MAIL: 
+                    <a class="footer__link" href="mailto:contact@glee.com">contact@glee.com</a>
+                </p>
+            </div>
+            <div class="footer__services">
+                <h6 class="footer__title">Services</h6>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">About Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Return Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Our Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Contact Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__account">
+                <h6 class="footer__title">Account</h6>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Your account</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Checkout</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Login</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link link-hover">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <h6 class="footer__title">Newsletter</h6>
+                <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+                <form action="#" class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Email address">
+                    <button class="footer__btn button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&#169;2020 CopyRight Example. All rights reserved.</p>
+            <ul class="footer__menu">
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Home</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">About</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Blog</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link footer__link link-hover">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+	</div>	
+	<script src="js/app.min.js"></script>
+</body>
+</html>
