@@ -320,22 +320,23 @@ if(document.querySelector('.recent__rating')){
 }
 
 // changing products view
+if(document.querySelector('.catalogue__nav-list')){
+    const buttonList = document.querySelector('.catalogue__nav-list');
+    const buttonGrid = document.querySelector('.catalogue__nav-grid');
+    const pageWrapper = document.querySelector('.wrapper');
 
-const buttonList = document.querySelector('.catalogue__nav-list');
-const buttonGrid = document.querySelector('.catalogue__nav-grid');
-const pageWrapper = document.querySelector('.wrapper');
+    buttonList.addEventListener('click', function(){
+        pageWrapper.classList.add('catalogue-list');
+        buttonGrid.classList.remove('button-active');
+        buttonList.classList.add('button-active');
+    })
 
-buttonList.addEventListener('click', function(){
-    pageWrapper.classList.add('catalogue-list');
-    buttonGrid.classList.remove('button-active');
-    buttonList.classList.add('button-active');
-})
-
-buttonGrid.addEventListener('click', function(){
-    pageWrapper.classList.remove('catalogue-list');
-    buttonList.classList.remove('button-active');
-    buttonGrid.classList.add('button-active');
-})
+    buttonGrid.addEventListener('click', function(){
+        pageWrapper.classList.remove('catalogue-list');
+        buttonList.classList.remove('button-active');
+        buttonGrid.classList.add('button-active');
+    })
+}
 
 // range slider
 
@@ -373,10 +374,19 @@ if(document.querySelector('.price__slider')){
     })
 }
 
-// filter-button
+// filter-button with overlay
 
-const filterButton = document.querySelector('.filter-button');
-const filtersMenu = document.querySelector('.filters');
-filterButton.addEventListener('click', function(){
-    filtersMenu.classList.toggle('filters-active')
-});
+if(document.querySelector('.filter-button')){
+    const filterButton = document.querySelector('.filter-button');
+    const filtersMenu = document.querySelector('.filters');
+    const overlay = document.querySelector('.overlay');
+
+    filterButton.addEventListener('click', function(){
+        filtersMenu.classList.toggle('filters-active');
+        overlay.classList.toggle('overlay-active')
+    });
+    overlay.addEventListener('click', function(){
+        filtersMenu.classList.remove('filters-active');
+        overlay.classList.remove('overlay-active')
+    })
+}

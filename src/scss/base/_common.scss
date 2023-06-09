@@ -92,3 +92,22 @@ $buttonBG: #a3bbc8;
     }
 }
 
+// overlay
+
+.overlay{
+    transition: background-color .3s ease 0s;
+ 
+    &.overlay-active{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+
+        height: 100%;
+        width: 100%;        
+
+        background-color: rgba(#000, .5);
+    }
+}

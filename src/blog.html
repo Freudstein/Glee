@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="wrapper bottom-short">
+		@@include('modules/_header.html')
+		<main>
+            @@include('modules/_page-name.html',{
+                "title": "Blog"
+            })
+
+            <button class="filter-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="45" viewBox="0 0 512 512">
+                    <path fill="#FFF" stroke-width="25" stroke="#a3bbc8" d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/>
+                </svg>
+            </button>
+            <section class="blog">
+                <div class="blog__container">
+                    <div class="blog__inner">
+                        <div class="blog__body">
+                            <div class="blog__body-items">
+                                <div class="blog__item blog-post">
+                                    <div class="blog-post__figure _ibg">
+                                        <img src="img/blog/blog1.jpg" alt="">
+                                        <div class="blog-post__inscription">
+                                            <div class="blog-post__date">28 January, 2020</div>
+                                            <a href="#" class="blog-post__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-post__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog-post__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog-post__button button button-arrow">View more</button>
+                                </div>
+                                <div class="blog__item blog-post">
+                                    <div class="blog-post__figure _ibg">
+                                        <img src="img/blog/blog2.jpg" alt="">
+                                        <div class="blog-post__inscription">
+                                            <div class="blog-post__date">28 January, 2020</div>
+                                            <a href="#" class="blog-post__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-post__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog-post__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog-post__button button button-arrow">View more</button>
+                                </div>
+                                <div class="blog__item blog-post">
+                                    <div class="blog-post__figure _ibg">
+                                        <img src="img/blog/blog3.jpg" alt="">
+                                        <div class="blog-post__inscription">
+                                            <div class="blog-post__date">28 January, 2020</div>
+                                            <a href="#" class="blog-post__author">By Admin</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-post__title">Fonsectetur adipisicing elit</h3>
+                                    <p class="blog-post__text">
+                                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </p>
+                                    <button class="blog-post__button button button-arrow">View more</button>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <div class="blog__pagination pagination">
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link pagination__link--text">NEXT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="blog__filters filters">
+                            <div class="filters__search search">
+                                <form action="" class="search__form">
+                                    <input class="search__input" type="search">
+                                    <button class="search__button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(9, 64, 116)" d="M17.249,17.920 C17.098,17.920 16.946,17.862 16.830,17.746 L11.531,12.448 C10.398,13.393 8.941,13.962 7.353,13.962 C3.752,13.962 0.822,11.032 0.822,7.431 C0.822,3.829 3.752,0.899 7.353,0.899 C10.955,0.899 13.884,3.829 13.884,7.431 C13.884,9.018 13.316,10.475 12.371,11.609 L17.669,16.907 C17.785,17.023 17.843,17.175 17.843,17.327 C17.843,17.478 17.785,17.630 17.669,17.746 C17.553,17.862 17.401,17.920 17.249,17.920 ZM7.353,2.087 C4.407,2.087 2.010,4.484 2.010,7.431 C2.010,10.377 4.407,12.775 7.353,12.775 C10.300,12.775 12.698,10.377 12.698,7.431 C12.698,4.484 10.300,2.087 7.353,2.087 Z"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- category -->
+                            <div class="filters__category category">
+                                <h4 class="category__title filters-title">Category</h4>
+                                <form action="#">
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Chair</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Table</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Lamp</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Watch</div>
+                                    </label>
+                                    <label class="category__label">
+                                        <input type="radio" class="category__input visually-hidden" name="category">
+                                        <div class="category__radio">Clock</div>
+                                    </label>
+                                </form>
+                            </div>
+
+                            <!-- recent posts -->
+                            <div class="blog__recent recent-blog">
+                                <h4 class="recent-blog__title filters-title">Recent posts</h4>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-1.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Corem ipsum dolor tetur adipisicing elit</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-2.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Fdipisicing elit, sed do eiusmod tempor</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-3.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Eonsectetur adipisicing elit, sed do eiusmod </h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="recent-blog__product">
+                                    <div class="recent-blog__figure">
+                                        <img src="img/blog/blog-recent-4.jpg" alt="">
+                                    </div>
+                                    <div class="recent-blog__content">
+                                        <h6 class="recent-blog__post-name">Gnim ad minim veniam, quis nostrud</h6>
+                                        <div class="recent-blog__date">28 January, 2020</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <div class="overlay"></div>
+            @@include('modules/_bottom.html')
+		</main>
+		@@include('modules/_footer.html')
+	</div>	
+	<script src="js/app.min.js"></script>
+</body>
+</html>
